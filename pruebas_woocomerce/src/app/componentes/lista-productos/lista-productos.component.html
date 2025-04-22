@@ -1,0 +1,14 @@
+
+<h2>Lista de productos</h2>
+<ul>
+  <li *ngFor="let producto of productos">
+    
+    {{ producto.name }} - ${{ producto.price }}
+    <br />
+    <img
+      *ngIf="producto.images.length > 0"
+      [src]="producto.images[0].src"
+      width="100"
+    /><br />
+  </li>
+</ul>
