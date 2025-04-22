@@ -5,17 +5,22 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListaProductosComponent } from './componentes/lista-productos/lista-productos.component';
+import { FooterComponent } from './componentes/footer/footer.component';
+import { HeaderComponent } from './componentes/header/header.component';
+import { PortadaComponent } from './componentes/portada/portada.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListaProductosComponent
+    ListaProductosComponent,
+    FooterComponent,
+    HeaderComponent,
+    PortadaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-    ListaProductosComponent
+    HttpClientModule
 ],
   providers: [
     provideClientHydration(withEventReplay())

@@ -3,7 +3,7 @@
 <ul>
   <li *ngFor="let producto of productos">
     
-    {{ producto.name }} - ${{ producto.price }}
+    {{ producto.name }} - {{ producto.price }}€
     <br />
     <img
       *ngIf="producto.images.length > 0"
