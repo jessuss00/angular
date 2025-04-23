@@ -8,6 +8,7 @@ import { ListaProductosComponent } from './componentes/lista-productos/lista-pro
 import { FooterComponent } from './componentes/footer/footer.component';
 import { HeaderComponent } from './componentes/header/header.component';
 import { PortadaComponent } from './componentes/portada/portada.component';
+import {GoogleMapsModule} from '@angular/google-maps';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PortadaComponent } from './componentes/portada/portada.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    GoogleMapsModule
 ],
   providers: [
     provideClientHydration(withEventReplay())

@@ -1,54 +1,82 @@
-.hero {
-    position: relative;
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100vh;
     overflow: hidden;
-  }
-  
-  .hero-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(60%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    min-height: 200px;
+    background-image: url('https://www.e-strategic.fr/wp-content/uploads/2018/10/Cross-Canal-2-1000x500.jpg');
+      background-size: cover;
+      background-position: center;
   }
   
   .hero-content {
-    position: relative;
-    z-index: 2;
     text-align: center;
-    color: white;
-    padding: 40px;
-    max-width: 600px;
-    margin: auto;
-    top: 50%;
-    transform: translateY(-50%);
   }
   
-  .hero h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
+  /* Título principal con efecto "Spring" */
+  .hero-content h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    color: #007bff;;
+    background: none;
+    position: center;
+    display: inline-block;
+    margin-bottom: 0.2em;
+    text-shadow: /* base */
+      4px 4px 0 #f05050
   }
   
-  .hero p {
-    font-size: 20px;
-    margin-bottom: 30px;
+  /* Subtítulo con efecto "vibes" */
+  .hero-content p {
+    font-family: 'Baloo 2', cursive;
+    font-size: 2.8rem;
+    color: #f05050;
+    margin-top: 0;
+    margin-bottom: 1.2em;
+    display: inline-block;
+    background: none;
+    text-shadow:
+    3px 3px 0 #007bff;
   }
   
+  /* Botón */
   .boton-hero {
-    background-color: #ffcc00;
-    color: #333;
-    padding: 12px 24px;
-    font-weight: bold;
+    font-family: 'Baloo 2', cursive;
+    background: #007bff;;
+    color: #fff;
+    border: none;
+    padding: 0.8em 2em;
+    font-size: 1.2rem;
+    border-radius: 40px;
+    cursor: pointer;
     text-decoration: none;
-    border-radius: 8px;
-    transition: background-color 0.3s;
+    font-weight: bold;
   }
   
   .boton-hero:hover {
-    background-color: #e6b800;
+    background:#f05050;
   }
-  
+  .maps {
+    
+    margin-top: 30px; /* separación hacia arriba */
+    display: flex;
+    justify-content: flex-start; /* manda el mapa a la derecha */
+    padding-right: 40px; /* espacio del borde derecho */
+  }
+  .maps h2 {
+    font-family: 'Baloo 2', cursive;
+    text-shadow:
+    3px 3px 0 #000000;
+    color: #64ff1c;  }
+  google-map {
+    border: 3px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  .texto-mapa {
+    max-width: 500px;
+    font-size: 18px;
+    line-height: 1.6;
+  }

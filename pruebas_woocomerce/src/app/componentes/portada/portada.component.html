@@ -1,9 +1,31 @@
 <section class="hero">
-    <img src="https://media.licdn.com/dms/image/v2/C4E12AQFls95OiskkcA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1537830779366?e=2147483647&v=beta&t=-17mscPUtUNVZCth6r6Ia9bZBfSmLjOfekEbgpsErYc" />
     <div class="hero-content">
       <h1>Bienvenido a Mi Tienda Online</h1>
-      <p>Los mejores productos, al mejor precio. ¡Compra fácil, rápido y seguro!</p>
-      <a href="#productos" class="boton-hero">Ver productos</a>
+      <br>
+      <p>Los mejores productos, al mejor precio. <br> ¡Compra fácil, rápido y seguro!</p>
+      <br>
+      <a routerLink="Productos" routerLinkActive="active" class="boton-hero">Ver productos</a>
     </div>
+    <br>
+  </section>
+  <section class="maps">
+    <div class="texto-mapa">
+      <h2>Encuéntranos aquí</h2>
+      <p>
+        Estamos ubicados en el corazón de la ciudad.  <br> Ven a visitarnos para ver los mejores móviles en persona.
+        <br> Mairena del Alcor (Sevilla)
+      </p>
+    </div>
+    <!-- google-map-demo.component.html -->
+<google-map
+height="400px"
+width="750px"
+[center]="center"
+[zoom]="zoom"
+(mapClick)="addMarker($event)">
+  @for (position of markerPositions; track position) {
+    <map-marker [position]="position" [options]="markerOptions" />
+  }
+</google-map>
   </section>
   
