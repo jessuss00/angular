@@ -1,0 +1,52 @@
+/* --- ESTILOS GENERALES --- */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .contenedor-principal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  
+  /* --- SECCIÓN DE MAPA O CUALQUIER BLOQUE --- */
+  .bloque {
+    flex: 1 1 45%;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  /* --- RESPONSIVE: TABLET O MÓVIL --- */
+  @media (max-width: 1024px) {
+    .bloque {
+      flex: 1 1 100%;
+    }
+  
+    .contenedor-principal {
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+    }
+  }
+  
+  /* --- MODO OSCURO OPCIONAL --- */
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #121212;
+      color: #ffffff;
+    }
+  
+    .bloque {
+      background-color: #1e1e1e;
+      color: #ffffff;
+    }
+  }
+  
