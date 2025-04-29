@@ -39,4 +39,23 @@ h2 {
   li::marker {
     content: none;
   }
+
+  li .boton {
+    margin-top: 15px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-family: 'Segoe UI', sans-serif;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  li .boton:hover {
+    background-color: #005fa3;
+    transform: scale(1.05);
+  }
   

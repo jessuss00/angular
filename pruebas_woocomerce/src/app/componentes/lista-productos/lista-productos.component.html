@@ -3,12 +3,15 @@
 <ul>
   <li *ngFor="let producto of productos">
     
-    {{ producto.name }} - {{ producto.price }}€
+    {{ producto.name }}  
     <br />
     <img
       *ngIf="producto.images.length > 0"
       [src]="producto.images[0].src"
       width="100"
     /><br />
+    {{ producto.price }}€
+    <br>
+    <button class="boton" (click)="agregarAlCarrito(producto)">Añadir a carrito</button>
   </li>
 </ul>

@@ -1,0 +1,24 @@
+<section class="carrito">
+<div class="contenedor-carrito">
+    <table>
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Subtotal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let producto of listaCarrito">
+                <td>{{producto.name}}</td>
+                <td>{{producto.price}}</td>
+                <td>{{producto.quantity}}</td>
+                <td>{{producto.quantity * producto.price}}</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="boton-agregar" (click)="vaciarCarrito()"> Vaciar carrito</button>
+</div>
+</section>
