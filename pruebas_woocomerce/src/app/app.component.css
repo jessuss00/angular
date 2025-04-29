@@ -1,14 +1,6 @@
-
-  @media (max-width: 1024px) {
-    .bloque {
-      flex: 1 1 100%;
-    }
-  
-    .contenedor-principal {
-      flex-direction: column;
-      align-items: center;
-      padding: 1rem;
-    }
-  }
-  
-  
+.to{
+  display: grid;
+  grid-template-columns: 
+  repeat(auto-fit, minmax(150px, 1fr));
+  gap: 32px;
+}
