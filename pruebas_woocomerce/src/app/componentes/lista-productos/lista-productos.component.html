@@ -8,11 +8,11 @@
     <img
       *ngIf="producto.images.length > 0"
       [src]="producto.images[0].src"
-      width="100"
+      width="300"
     /><br />
     {{ producto.price }}€
     <br>
-    <button class="botonn">Ver detalles del producto</button>
+    <a routerLink="Descripcion/{{producto.id}}" routerLinkActive="active"><button class="botonn">Ver detalles del producto</button></a>
     <button class="boton" (click)="agregarAlCarrito(producto)">Añadir a carrito</button>
   </li>
 </ul>
