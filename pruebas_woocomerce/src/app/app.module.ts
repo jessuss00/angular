@@ -10,6 +10,7 @@ import { HeaderComponent } from './componentes/header/header.component';
 import { PortadaComponent } from './componentes/portada/portada.component';
 import {GoogleMapsModule} from '@angular/google-maps';
 import { CarritoComponent } from './componentes/carrito/carrito.component';
+import { DescripcionComponent } from './componentes/lista-productos/descripcion/descripcion.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CarritoComponent } from './componentes/carrito/carrito.component';
     FooterComponent,
     HeaderComponent,
     PortadaComponent,
-    CarritoComponent
+    CarritoComponent,
+    DescripcionComponent
   ],
   imports: [
     BrowserModule,

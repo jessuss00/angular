@@ -8,8 +8,8 @@ import { Productos } from '../modelos/productos';
 })
 export class ProductoService {
   private apiUrl ="https://jmadronal.moneomk.com/wp-json/wc/v3/products"
-  private username = 'ck_5d90c4a3aec40857441f11ed3adc96c47d73188a';
-  private password = 'cs_70d3026407bc5cfd02ed799a56339e30e61209b4';
+  private username = 'ck_7b1e446b4f0954816ebc65597c088bd81913ac1d';
+  private password = 'cs_256faedba257e5bba5acc81de05dab60a25f575b';
   constructor(private http: HttpClient) { }
 
   obtenerProductos(): Observable<Productos[]> {

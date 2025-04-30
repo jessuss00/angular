@@ -1,0 +1,12 @@
+<li *ngFor="let producto of productos">
+    
+   <h2> {{ producto.name }}  </h2>
+    {{ producto.description }}
+    <br />
+    <img
+      *ngIf="producto.images.length > 0"
+      [src]="producto.images[0].src"
+      width="100"
+    /><br />
+    {{ producto.price }}€
+  </li>
