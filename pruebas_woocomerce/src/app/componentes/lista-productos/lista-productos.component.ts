@@ -63,4 +63,8 @@ export class ListaProductosComponent implements OnInit {
     }
 
   }
+  mostrarAlerta() {
+    alert('¡Producto añadido al carrito!');
+  }
+  
 }

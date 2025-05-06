@@ -19,4 +19,8 @@ export class CarritoComponent {
     localStorage.clear();
     this.listaCarrito = [];
   }
+  mostrarAlerta() {
+    alert('Carrito vacio');
+  }
+  
 }

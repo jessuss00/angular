@@ -1,12 +1,21 @@
-<li *ngFor="let producto of productos">
-    
-   <h2> {{ producto.name }}  </h2>
-    {{ producto.description }}
-    <br />
-    <img
-      *ngIf="producto.images.length > 0"
+<div *ngIf="productosSelected as producto" class="producto-detalle">
+  <h2>{{ producto.name }}</h2>
+  <div class="imagen">
+    <img 
+      *ngIf="producto.images?.[currentImageIndex]?.src" 
       [src]="producto.images[currentImageIndex].src"
-      width="100"
-    /><br />
-    {{ producto.price }}€
-  </li>
+      alt="Imagen del producto"
+    />
+  </div>
+
+  <div class="info">
+    
+    <p>Descripcion: <span [innerHTML]="productosSelected.description"></span></p>
+    <p class="precio">{{ producto.price }}€</p>
+    <button class="comprar">Comprar</button>
+  </div>
+</div>
+
+<div *ngIf="!productosSelected">
+  <p>Producto no encontrado o cargando...</p>
+</div>

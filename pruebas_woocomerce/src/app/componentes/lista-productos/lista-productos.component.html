@@ -12,7 +12,8 @@
     /><br />
     {{ producto.price }}€
     <br>
-    <a routerLink="Descripcion/{{producto.id}}" routerLinkActive="active"><button class="botonn">Ver detalles del producto</button></a>
-    <button class="boton" (click)="agregarAlCarrito(producto)">Añadir a carrito</button>
+    <a [routerLink]="['/Descripcion', producto.id]" routerLinkActive="active">
+      <button class="botonn">Ver detalles del producto</button></a>
+     <a routerLink="/Carrito" routerLinkActive="active"><button class="boton" (click)="agregarAlCarrito(producto)">Añadir a carrito</button></a>
   </li>
 </ul>
