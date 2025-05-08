@@ -11,6 +11,10 @@ import { PortadaComponent } from './componentes/portada/portada.component';
 import {GoogleMapsModule} from '@angular/google-maps';
 import { CarritoComponent } from './componentes/carrito/carrito.component';
 import { DescripcionComponent } from './componentes/lista-productos/descripcion/descripcion.component';
+import { ContactoComponent } from './componentes/contacto/contacto.component';
+import { ReparacionesComponent } from './componentes/reparaciones/reparaciones.component';
+import { AsesoramientoComponent } from './componentes/asesoramiento/asesoramiento.component';
+import { SoporteLineaComponent } from './componentes/soporte-linea/soporte-linea.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { DescripcionComponent } from './componentes/lista-productos/descripcion/
     HeaderComponent,
     PortadaComponent,
     CarritoComponent,
-    DescripcionComponent
+    DescripcionComponent,
+    ContactoComponent,
+    ReparacionesComponent,
+    AsesoramientoComponent,
+    SoporteLineaComponent
   ],
   imports: [
     BrowserModule,

@@ -7,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  menuVisible = false;
 
+  abrirMenu() {
+    this.menuVisible = true;
+  }
+
+  cerrarMenu() {
+    this.menuVisible = false;
+  }
 }

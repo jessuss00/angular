@@ -1,0 +1,64 @@
+/* Formulario de contacto */
+.formulario-contacto {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .formulario-contacto h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #484780;
+    font-size: 2rem;
+  }
+  
+  .formulario-contacto .campo {
+    margin-bottom: 20px;
+  }
+  
+  .formulario-contacto label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .formulario-contacto input,
+  .formulario-contacto textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+  }
+  
+  .formulario-contacto input:focus,
+  .formulario-contacto textarea:focus {
+    border-color: #7e57c2;
+    outline: none;
+  }
+  
+  .formulario-contacto button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background-color: #484780;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .formulario-contacto button:hover {
+    background-color: #2e2e5f;
+  }
+  

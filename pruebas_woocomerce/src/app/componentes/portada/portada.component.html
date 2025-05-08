@@ -1,36 +1,88 @@
-
-<!-- Bloque 1: Banner grande -->
+<!-- BLOQUE 1: BANNER PRINCIPAL -->
 <section class="bloque-banner">
-  <h2>Acabemos con la <span>old technoleague </span></h2>
-  <p>Únete a la lucha contra la old technoleague y renueva ese viejo telefono </p>
-  <p>Obsrva los mejores moviles a los peores precios,  <br> ¡No es normal lo bajos que estan esos precios!</p>
+  <h2>Acabemos con la <span>old technoleague</span></h2>
+  <p>Únete a la lucha contra la old technoleague y renueva ese viejo teléfono</p>
+  <p>Observa los mejores móviles a los peores precios, <br> ¡No es normal lo bajos que están esos precios!</p>
   <a routerLink="Productos" routerLinkActive="active" class="boton-banner">Ve los productos</a>
 </section>
 
-<!-- Bloque 2: Texto destacado -->
+<!-- BLOQUE 2: SERVICIOS OFRECIDOS -->
+<section class="bloque-servicios">
+  <h2 class="titulo-ejes">Nuestros Servicios</h2>
+  <div class="contenedor-servicios">
+    <div class="servicio">
+      <a routerLink="/Productos" routerLinkActive="active"><img src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2023/01/19/16741404146106.jpg" alt="Icono Servicio 1"></a>
+      <h3>VENTA DE MÓVILES</h3>
+      <a href="#">Más información</a>
+    </div>
+    <div class="servicio">
+      <a routerLink="/Reparaciones" routerLinkActive="active"><img src="https://remonline.app/uploads/wysiwyg/blog/business-continuous/start-electronics-repair/man-repairing-laptop.webp" alt="Icono Servicio 2"></a>
+      <h3>REPARACIONES</h3>
+      <a href="#">Más información</a>
+    </div>
+    <div class="servicio">
+      <a routerLink="/Asesoramiento" routerLinkActive="active"><img src="https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2016/04/07/14600424941827.jpg" alt="Icono Servicio 3"></a>
+      <h3>ASESORAMIENTO</h3>
+      <a href="#">Más información</a>
+    </div>
+    
+    <div class="servicio">
+      <a routerLink="/Soporte-linea" routerLinkActive="active"><img src="https://www.santisoluciones.com/blog/wp-content/uploads/2024/03/Soporte-en-linea.jpg" alt="Icono Servicio 5"></a>
+      <h3>SOPORTE EN LINEA</h3>
+      <a href="#">Más información</a>
+    </div>
+    <div class="servicio">
+      <img src="https://www.autentify.com.br/wp-content/uploads/2023/05/blogs-de-tecnologia.jpg" alt="Icono Servicio 6">
+      <h3>BLOG TECNOLÓGICO</h3>
+      <a href="#">Más información</a>
+    </div>
+  </div>
+</section>
+
+<!-- BLOQUE 3: TEXTO DESTACADO -->
 <section class="bloque-texto">
   <h2>Sácale partido a la tecnología con nosotros</h2>
   <p>Compra con responsabilidad, calidad y buenos precios.</p>
-  <h3>Aprovecha nuestro cupon de descuento de 20%</h3>
+  <h3>Aprovecha nuestro cupón de descuento de 20%</h3>
 </section>
 
-  <section class="maps">
-    <div class="texto-mapa">
-      <h2>Encuéntranos aquí</h2>
-      <p>
-        Estamos ubicados en el corazón de la ciudad.  <br> Ven a visitarnos para ver los mejores móviles en persona.
-        <br> Mairena del Alcor (Sevilla)
-      </p>
-    </div>
+<!-- BLOQUE 4: MITAD IMAGEN / MITAD TEXTO -->
+<section class="bloque-mitad">
+  <div class="mitad-imagen">
+    <img src="https://img.freepik.com/vector-gratis/concepto-carga-imagen-pagina-destino_23-2148298840.jpg?semt=ais_hybrid&w=740" alt="Descripción de la imagen">
+  </div>
+  <div class="mitad-texto">
+    <h2>Conoce Nuestro Servicio de cloud</h2>
+    <p>
+      Nuestros móviles incluyen almacenamiento en la nube para que guardes tus fotos, videos y archivos de forma segura y accedas a ellos desde cualquier lugar. <br>
+      Con el servicio de cloud integrado, nunca te quedarás sin espacio: tus recuerdos y documentos estarán siempre protegidos y disponibles al instante.
+    </p>
+    <a href="#" class="boton-mitad">Saber más</a>
+  </div>
+</section>
 
-<google-map
+<!-- SEPARADOR DECORATIVO -->
+<section class="separador-section">
+  <div class="separador"></div>
+</section>
 
-[center]="center"
-[zoom]="zoom"
-(mapClick)="addMarker($event)">
-  @for (position of markerPositions; track position) {
-    <map-marker [position]="position" [options]="markerOptions" />
-  }
-</google-map>
-  </section>
-  
+<!-- BLOQUE 5: MAPA Y UBICACIÓN -->
+<section class="maps">
+  <div class="texto-mapa">
+    <h2>Encuéntranos aquí</h2>
+    <p>
+      Estamos ubicados en el corazón de la ciudad. <br>
+      Ven a visitarnos para ver los mejores móviles en persona. <br>
+      Mairena del Alcor (Sevilla)
+    </p>
+  </div>
+
+  <google-map
+    [center]="center"
+    [zoom]="zoom"
+    (mapClick)="addMarker($event)">
+    @for (position of markerPositions; track position) {
+      <map-marker [position]="position" [options]="markerOptions" />
+    }
+  </google-map>
+</section>

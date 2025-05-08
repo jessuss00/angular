@@ -15,10 +15,12 @@
                 <td>{{producto.price}}</td>
                 <td>{{producto.quantity}}</td>
                 <td>{{producto.quantity * producto.price}}</td>
-                <td></td>
+                <td><button class="boton-agregar" (click)="eliminarUnidad(producto.id)">- Quitar unidad</button>
+                </td>
             </tr>
         </tbody>
     </table>
     <button class="boton-agregar" (click)="vaciarCarrito()" (click)="mostrarAlerta()"> Vaciar carrito</button>
+    
 </div>
 </section>
